@@ -21,12 +21,12 @@ from rest_framework.routers import DefaultRouter
 from rest_framework_simplejwt.views import TokenObtainPairView,TokenRefreshView,TokenVerifyView
 
 router=DefaultRouter()
-router.register('data',views.EmployeeDetails,basename='data')
+router.register('empapi',views.EmployeeDetails,basename='data')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include(router.urls)),
-    # path('gettoken/',TokenObtainPairView.as_view(),name='token_obtain_pair'),
+    path('gettoken/',TokenObtainPairView.as_view(),name='token_obtain_pair'),
     path('gettoken/', TokenObtainPairView.as_view(), name='obtain_token'),
     path('refreshtoken/',TokenRefreshView.as_view(),name='token_refresh'),
     path('varifytoken/',TokenVerifyView.as_view(),name='token_varify'),
