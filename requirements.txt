@@ -18,7 +18,7 @@ PyJWT==2.11.0
 PySocks==1.7.1
 requests==2.32.5
 requests-toolbelt==1.0.0
-rest-framework-simplejwt==0.0.2
+ 
 rich==14.3.2
 setuptools==81.0.0
 sqlparse==0.5.5
