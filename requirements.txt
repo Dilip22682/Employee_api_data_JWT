@@ -6,6 +6,7 @@ defusedxml==0.7.1
 Django==6.0.2
 djangorestframework==3.16.1
 djangorestframework_simplejwt==5.5.1
+gunicorn==25.1.0
 httpie==3.2.4
 idna==3.11
 markdown-it-py==4.0.0
